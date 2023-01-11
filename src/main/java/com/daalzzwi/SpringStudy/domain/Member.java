@@ -3,21 +3,25 @@ package com.daalzzwi.SpringStudy.domain;
 public class Member {
 
     private Long id;
-    private String getId;
+    private String name;
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
-    public String getGetId() {
-        return getId;
+    public String getName() {
+
+        return name;
     }
 
-    public void setGetId(String getId) {
-        this.getId = getId;
+    public void setName(String name) {
+
+        this.name = name;
     }
 }
