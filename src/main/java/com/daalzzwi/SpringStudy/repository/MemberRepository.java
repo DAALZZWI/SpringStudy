@@ -1,6 +1,7 @@
 package com.daalzzwi.SpringStudy.repository;
 
 import com.daalzzwi.SpringStudy.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import javax.swing.text.html.Option;
 import java.util.List;

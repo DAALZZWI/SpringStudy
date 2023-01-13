@@ -3,14 +3,18 @@ package com.daalzzwi.SpringStudy.service;
 import com.daalzzwi.SpringStudy.domain.Member;
 import com.daalzzwi.SpringStudy.repository.MemberRepository;
 import com.daalzzwi.SpringStudy.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
 
         this.memberRepository = new MemoryMemberRepository();
